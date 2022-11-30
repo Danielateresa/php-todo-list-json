@@ -26,18 +26,15 @@
             <main class="site_main">
                 <!-- Some borders are removed -->
                 <ul class="list-group list-group-flush rounded">
-                    <li class="list-group-item">Item</li>
-                    <li class="list-group-item">Item</li>
-                    <li class="list-group-item">Item</li>
-                    <li class="list-group-item">Item</li>
-                    <li class="list-group-item">Item</li>
+                    <li class="list-group-item" v-for="element in elements">{{element}}</li>
+
                 </ul>
 
-                <div class="mt-3 d-flex">
-                    <input type="text" class="p-2" name="" id="" aria-describedby="helpId"
+                <form action="index.php" method="get" class="mt-3 d-flex">
+                    <input type="text" class="p-2" name="element" id="element" aria-describedby="helpId"
                         placeholder="inserisci un elemento...">
                     <button type="button" class=" btn-dark py-2 px-3 bg-black text-white">Inserisci</button>
-                </div>
+                </form>
             </main>
             <!-- /.site_main -->
         </div>
@@ -50,7 +47,7 @@
 
     <!-- vue script -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
