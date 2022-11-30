@@ -18,13 +18,13 @@ createApp({
                     console.log(err.message);
                 })
         },
-        addElement() {
+        addElement(newElement) {
             const data = {
                 newElement: newElement
             }
             axios.post(this.url, data, { headers: { 'Content-Type': 'multipart/form-data' } })
                 .then(response => {
-                    console.log(response.data);
+                    console.log(data);
                     this.elements = response.data;
                 })
                 .catch(err => {

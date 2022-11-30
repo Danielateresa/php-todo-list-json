@@ -34,7 +34,7 @@
                     <input type="text" class="p-2" name="newElement" id="newElement" aria-describedby="helpId"
                         placeholder="inserisci un elemento..." v-model="newElement">
                     <button type="button" class=" btn-dark py-2 px-3 bg-black text-white"
-                        @click="addElement">Inserisci</button>
+                        @click="addElement(newElement)">Inserisci</button>
                 </form>
             </main>
             <!-- /.site_main -->
