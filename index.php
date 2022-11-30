@@ -30,7 +30,7 @@
 
                 </ul>
 
-                <form action="index.php" method="get" class="mt-3 d-flex">
+                <form action="index.php" method="post" class="mt-3 d-flex">
                     <input type="text" class="p-2" name="element" id="element" aria-describedby="helpId"
                         placeholder="inserisci un elemento...">
                     <button type="button" class=" btn-dark py-2 px-3 bg-black text-white">Inserisci</button>
