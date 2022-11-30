@@ -31,9 +31,10 @@
                 </ul>
 
                 <form action="index.php" method="post" class="mt-3 d-flex">
-                    <input type="text" class="p-2" name="element" id="element" aria-describedby="helpId"
-                        placeholder="inserisci un elemento...">
-                    <button type="button" class=" btn-dark py-2 px-3 bg-black text-white">Inserisci</button>
+                    <input type="text" class="p-2" name="newElement" id="newElement" aria-describedby="helpId"
+                        placeholder="inserisci un elemento..." v-model="newElement">
+                    <button type="button" class=" btn-dark py-2 px-3 bg-black text-white"
+                        @click="addElement">Inserisci</button>
                 </form>
             </main>
             <!-- /.site_main -->

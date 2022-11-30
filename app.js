@@ -4,7 +4,7 @@ createApp({
         return {
             elements: [],
             url: 'server.php',
-            element: ''
+            newElement: ''
         }
     },
     methods: {
@@ -20,10 +20,10 @@ createApp({
         },
         addElement() {
             const data = {
-                element: 'element'
+                newElement: newElement
             }
             axios.post(this.url, data, { headers: { 'Content-Type': 'multipart/form-data' } })
-                .then((response) => {
+                .then(response => {
                     console.log(response.data);
                     this.elements = response.data;
                 })
